@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweet Treats Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff5f2;
+            color: #59352f;
+        }
+
+        header {
+            background: #713f3b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #f2c6c2;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #59352f;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 45px 15px;
+            background: #ffe3dc;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+        }
+
+        section {
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        .products, .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 12px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px #ddc5c0;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #b54760;
+            font-weight: bold;
+        }
+
+        button {
+            background: #b54760;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .offer {
+            background: #f7d1d1;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #713f3b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .card {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sweet Treats Bakery</h1>
+    <p>Freshly Baked with Love!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#custom">Custom Cakes</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Life is Sweeter with Cake!</h2>
+    <p>Delicious cakes, pastries and cookies for every occasion.</p>
+    <a href="#menu">Explore Our Menu</a>
+</div>
+
+<section id="menu">
+    <h2>Our Delicious Menu</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400"
+                 alt="Chocolate cake">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and creamy chocolate delight.</p>
+            <p class="price">₹650</p>
+            <button onclick="alert('Chocolate Cake selected!')">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400"
+                 alt="Strawberry pastry">
+            <h3>Strawberry Pastry</h3>
+            <p>Soft pastry with fresh fruity flavor.</p>
+            <p class="price">₹120</p>
+            <button onclick="alert('Strawberry Pastry selected!')">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400"
+                 alt="Chocolate chip cookies">
+            <h3>Chocolate Cookies</h3>
+            <p>Crunchy cookies with chocolate chips.</p>
+            <p class="price">₹250</p>
+            <button onclick="alert('Chocolate Cookies selected!')">Order Now</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="custom">
+    <h2>Custom Cake Designs</h2>
+    <p>Birthday cakes, wedding cakes and personalized designs!</p>
+    <p>Choose your flavor, size and favorite design.</p>
+    <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=500"
+         alt="Beautiful custom cake" width="260">
+    <p><button onclick="alert('Please contact us to customize your cake!')">
+        Customize Your Cake
+    </button></p>
+</section>
+
+<section class="offer">
+    <h2>Seasonal Special Offer!</h2>
+    <h3>Get 15% OFF on All Cakes</h3>
+    <p>Make your celebrations extra sweet this season!</p>
+</section>
+
+<section id="gallery">
+    <h2>Our Bakery Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=300"
+             alt="Decorated cake">
+        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=300"
+             alt="Fresh pastries">
+        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300"
+             alt="Freshly baked cookies">
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Address: Bakery Street, Andhra Pradesh, India</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Email: sweettreats@example.com</p>
+    <p>Opening Hours: 8 AM - 9 PM</p>
+    <p>© 2026 Sweet Treats Bakery</p>
+</footer>
+
+</body>
+</html>
